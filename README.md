@@ -1,9 +1,6 @@
 # Pro Plumber Pietermaritzburg Website
 
-## Student Information
 Name: Arabella Mohammed 
-
-Student Number: ST10512443
 
 Module Name: - Web Development  (Introduction)
 
