@@ -1,0 +1,217 @@
+<!--Reference list
+MDN Web Docs, 2026. <textarea>: The HTML Textarea element. [Online] Available at: https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/textarea [Accessed 27 August 2026].
+MDN Web Docs, 2026. <button>: The HTML Button element. [Online] Available at: https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/button [Accessed 27 August 2026].
+MDN Web Docs, 2026. <div>: The Content Division element. [Online] Available at: https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/div [Accessed 15 September 2026].
+MDN Web Docs, 2026. class HTML global attribute. [Online] Available at: https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/class [Accessed 15 September 2026].
+MDN Web Docs, 2026. Using responsive images in HTML. [Online] Available at: https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Responsive_images [Accessed 22 September 2026].
+MDN Web Docs, (n.d.). The HTML input element. [Online] Available at: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input [Accessed 4 November 2026].
+MDN Web Docs, (n.d.). HTML form element. [Online] Available at: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form [Accessed 6 November 2026].
+MDN Web Docs, (n.d.). HTML iframe element. [Online] Available at: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe [Accessed 6 November 2026].
+OpenAI. 2026. Chat-GPT (Version-5.5). [Large language model]. Available at: https://chatgpt.com/share/6a8cb7fa-3ab0-83ea-a6d1-a7a8ad7bb01d [Accessed: 24 August 2026].
+Pro Plumber Pietermaritzburg, n.d. Pro Plumber Pietermaritzburg. [Online] Available at: https://www.proplumberpietermaritzburg.co.za/  [Accessed 24 August 2026].
+The Independent Institute of Education, 2026. Web Development (Introduction) [WEDE5020/p/w Module Manual]. [online via ARC VLE] The Independent Institute of Education. Available at: WEDE5020MM.docx [Accessed: 27 August 2026]. -->
+
+<!-- Reference (IIE,2026,p.70)-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- External CSS stylesheet -->
+    <!--Reference (IIE,2026,p.106)-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Pro Plumber Pietermaritzburg | Book a Plumber</title>
+
+    <!--Reference (IIE,2026,p.185)-->
+    <!-- SEO Meta Description -->
+    <meta name="description" content="Contact Pro Plumber Pietermaritzburg for reliable plumbing assistance. Find our service locations, 
+    view our maps and get in touch with our team for plumbing enquiries and assistance.">
+
+    <!-- SEO Meta Keywords -->
+    <meta name="keywords" content="contact Pro Plumber, Pietermaritzburg plumber contact, plumber Hilton, plumbing contact details, local plumbing company, 
+    plumbing assistance, plumbing enquiries, emergency plumber contact">
+</head>
+
+<body>
+    <!-- Header and navigation -->
+    <header class="SiteHeader">
+        <h1 class="BrandName">Pro Plumber Pietermaritzburg</h1>
+
+         <!-- Hamburger menu checkbox 
+           Reference (MDN Web Docs, n.d.) -->
+        <input type="checkbox" id="MenuToggle">
+
+        <!-- Hamburger menu icon -->
+        <label for="MenuToggle" class="MenuButton">☰</label>
+
+        <!--Reference (IIE,2026,p.79)-->
+        <nav class="MainNav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="enquiry.html">Enquiry</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+<!-- Main Contact Us page information -->
+<main>
+
+    <!-- Contact Us introduction hero section 
+    Reference (MDN Web Docs, 2026)-->
+    <div class="ContactHero">
+
+        <!-- Contact Us hero image -->
+        <!-- References Image generated using ChatGPT (OpenAI, 2026 ; IIE,2026,p.78 ; MDN Web Docs, 2026) -->
+        <!-- Responsive Contact image -->
+        <img class="ContactImage"
+            src="images/contact-page-emergency-plumber.png"
+
+            srcset="images/contact-page-emergency-plumber-small.png 480w,
+                    images/contact-page-emergency-plumber-medium.png 800w,
+                    images/contact-page-emergency-plumber.png 1536w"
+
+            sizes="(max-width: 768px) 100vw,
+            (max-width: 1024px) 48vw,
+            48vw"
+            
+            alt="Pro Plumber emergency plumber carrying plumbing tools beside a branded service vehicle">
+
+        <!-- Contact Us hero introduction
+        Reference (MDN Web Docs, 2026)--> 
+        <section class="ContactIntro">
+            <h2>Contact Us</h2>
+
+            <p>Need to get in touch with us? Contact Pro Plumber Pietermaritzburg for plumbing assistance, emergency services or more information
+            about our services.</p>
+
+            <!-- 24/7 Emergency Plumbing information -->
+            <!-- Reference (Pro Plumber Pietermaritzburg, n.d.) -->
+            <h3>24/7 Emergency Plumbing</h3>
+            <p> If you are experiencing an urgent plumbing problem, contact us directly for assistance. We provide 24/7 emergency plumbing services for customers who require immediate help.</p>
+        </section>
+    </div>
+
+    <!-- Contact Form -->
+    <section class="FormSection">
+        <h2>Send Us a Message</h2>
+
+        <p>
+            Complete the form below if you would like to send us a general message or request more information.
+        </p>
+
+    <!-- Reference (IIE, 2026, p.85,177  ; MDN Web Docs, 2026) -->
+    <form action="mailto:proplumberpmb@example.com?subject=Website%20Contact%20Enquiry"
+        method="post"
+        enctype="text/plain">
+
+        <label for="ContactName">Name:</label>
+        <input type="text" id="ContactName" name="ContactName"
+            placeholder="Enter your full name"
+            autocomplete="name"
+            required>
+        <br><br>
+
+        <label for="ContactEmail">Email Address:</label>
+        <input type="email" id="ContactEmail" name="ContactEmail"
+            placeholder="Enter your email address"
+            autocomplete="email"
+            required>
+        <br><br>
+
+        <label for="ContactMessage">Message:</label>
+        <br>
+
+        <textarea id="ContactMessage" name="ContactMessage"
+            rows="8" cols="60"
+            minlength="10" maxlength="500"
+            placeholder="Enter your message"
+            required></textarea>
+        <br><br>
+
+        <button type="submit">Submit Message</button>
+    </form>
+    </section>
+
+    <!-- Locations sections 
+    Reference (MDN Web Docs, 2026)-->
+    <div class="ContactLocations">
+
+        <!-- Pietermaritzburg contact information -->
+        <!-- Reference (Pro Plumber Pietermaritzburg, n.d.; IIE,2026,p.79,84) -->
+        <section class="LocationCard">
+            <h2>Pietermaritzburg</h2>
+            <p>Cordwalles Rd, Town Hill, Pietermaritzburg, 3201</p>
+            <p>Phone: +27 60 069 1345</p>
+
+            <h3>Map & Directions</h3>
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3469.288492820755!2d30.3654115!3d-29.595298699999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ef6bca26bf3821b%3A0xc317432c9403899f!2sPro%20Plumber%20Pietermaritzburg!5e0!3m2!1sen!2sza!4v1788174174498!5m2!1sen!2sza"
+                width="500"
+                height="350"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin">
+            </iframe>
+        </section>
+
+        <!-- Hilton contact information -->
+        <!-- Reference (Pro Plumber Pietermaritzburg, n.d.; IIE,2026,p.79,84) -->
+        <section class="LocationCard">
+            <h2>Hilton</h2>
+            <p>3 Quarry St, Leonard, Hilton, 3245</p>
+            <p>Phone: +27 74 717 8820</p>
+
+            <h3>Map & Directions</h3>
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3470.600409930638!2d30.3026203!3d-29.5571291!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ef6a50152da16e1%3A0x3823b956a94c1808!2s3%20Quarry%20Rd%2C%20Leonard%2C%20Hilton%2C%203245!5e0!3m2!1sen!2sza!4v1788174752301!5m2!1sen!2sza"
+                width="500"
+                height="350"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin">
+            </iframe>
+        </section>
+    </div>
+</main>
+
+    <!-- Footer -->
+    <!-- Reference (Pro Plumber Pietermaritzburg, n.d. ; IIE,2026,p.112 ; MDN Web Docs, 2026)-->
+    <footer>
+        <h2>Contact Information</h2>
+
+        <div class="FooterContent">
+            <div> 
+                <h3>Pietermaritzburg Contact</h3>
+                <p>Cordwalles Rd, Town Hill, Pietermaritzburg, 3201</p>
+                <p>Phone: +27 60 069 1345</p>
+            </div>
+
+            <div>
+                <h3>Hilton Contact</h3>
+                <p>3 Quarry St, Leonard, Hilton, 3245</p>
+                <p>Phone: +27 74 717 8820</p>  
+            </div>
+        </div>          
+            
+                <div class="OnlineLinks">
+                <h3>Online Links</h3>
+                <!-- Reference (IIE,2026,p.75,79)-->
+                <ul>
+                    <li><a href="https://maps.app.goo.gl/77DfrbPMCzBXfx5Z9">Google Business</a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=61553934892440">Facebook</a></li>
+                    <li><a href="https://twitter.com/ProPlumberPMB">Twitter/X</a></li>
+                    <li><a href="https://www.youtube.com/@ProPlumberPietermaritzburg">YouTube</a></li>
+                    <li><a href="https://www.pinterest.com/proplumberpmb/">Pinterest</a></li>    
+                </ul>    
+            </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,221 @@
+<!--Reference list
+MDN Web Docs, 2026. <textarea>: The HTML Textarea element. [Online] Available at: https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/textarea [Accessed 27 August 2026].
+MDN Web Docs, 2026. <button>: The HTML Button element. [Online] Available at: https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/button [Accessed 27 August 2026].
+MDN Web Docs, 2026. <select>: The HTML Select element. [Online] Available at: https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/select [Accessed 27 August 2026].
+MDN Web Docs, 2026. Using responsive images in HTML. [Online] Available at: https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Responsive_images [Accessed 22 September 2026].
+MDN Web Docs, 2026. class HTML global attribute. [Online] Available at: https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/class [Accessed 15 September 2026].
+MDN Web Docs, (n.d.). The HTML input element. [Online] Available at: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input [Accessed 4 November 2026].
+MDN Web Docs, (n.d.). HTML form element. [Online] Available at: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form [Accessed 6 November 2026].
+MDN Web Docs, (n.d.). ARIA: status role. [Online] Available at: https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Roles/status_role [Accessed 6 November 2026].
+OpenAI. 2026. Chat-GPT (Version-5.5). [Large language model]. Available at: https://chatgpt.com/share/6a8cb7fa-3ab0-83ea-a6d1-a7a8ad7bb01d [Accessed: 24 August 2026].
+Pro Plumber Pietermaritzburg, n.d. Pro Plumber Pietermaritzburg. [Online] Available at: https://www.proplumberpietermaritzburg.co.za/  [Accessed 24 August 2026].
+The Independent Institute of Education, 2026. Web Development (Introduction) [WEDE5020/p/w Module Manual]. [online via ARC VLE] The Independent Institute of Education. Available at: WEDE5020MM.docx [Accessed: 27 August 2026]. -->
+
+<!-- Reference (IIE,2026,p.70)-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- External CSS stylesheet -->
+    <!--Reference (IIE,2026,p.106)-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/script.js" defer></script>
+
+    <title>Pro Plumber Pietermaritzburg | Request a Plumbing Quote </title>
+
+    <!--Reference (IIE,2026,p.185)-->
+    <!-- SEO Meta Description -->
+    <meta name="description" content="Submit a plumbing enquiry to Pro Plumber Pietermaritzburg for assistance with plumbing repairs, 
+    geyser installations, blocked drains, leaking pipes and other plumbing services.">
+
+    <!-- SEO Meta Keywords -->
+    <meta name="keywords" content="plumbing enquiry Pietermaritzburg, request plumbing quote, plumbing service request, book a plumber, plumbing repairs enquiry,
+    geyser installation quote, emergency plumbing enquiry, local plumber">
+</head>
+
+<body>
+    <!-- Header and navigation -->
+    <header class="SiteHeader">
+        <h1 class="BrandName">Pro Plumber Pietermaritzburg</h1>
+
+        <!-- Hamburger menu checkbox
+          Reference (MDN Web Docs, n.d.) -->
+        <input type="checkbox" id="MenuToggle">
+
+        <!-- Hamburger menu icon -->
+        <label for="MenuToggle" class="MenuButton">☰</label>
+
+        <!--Reference (IIE,2026,p.79)-->
+        <nav class="MainNav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="enquiry.html">Enquiry</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+<!-- Main Enquiry page information -->
+<main>
+
+    <!-- Enquiry hero section image
+    Reference (MDN Web Docs, 2026)-->
+    <div class="EnquiryHero">
+
+        <!-- Enquiry page image -->
+        <!-- References Image generated using ChatGPT (OpenAI, 2026 ; IIE,2026,p.78,173 ; MDN Web Docs, 2026) -->
+        <!-- Responsive Enquiry image -->
+        <img class="EnquiryImage"
+            src="images/enquiry-page-customer-request.png"
+
+            srcset="images/enquiry-page-customer-request-small.png 480w,
+            images/enquiry-page-customer-request-medium.png 800w,
+            images/enquiry-page-customer-request.png 1447w"
+
+            sizes="(max-width: 768px) 100vw,
+            (max-width: 1024px) 48vw,
+            48vw"
+            
+            alt="Customer using a smartphone to submit a plumbing service enquiry">
+
+        <!-- Enquiry hero section introduction
+        Reference (MDN Web Docs, 2026)-->        
+        <section class="EnquiryIntro">
+            <h2>Enquiry</h2>
+
+            <h3>Request a Quote</h3>
+
+            <p> Need help with a plumbing problem? Send us an enquiry and provide a few details about the service you require. Our team will use the
+            information provided to understand your plumbing needs and assist you further.</p>
+
+            <!-- Urgent Assistance information -->
+            <!-- Reference (Pro Plumber Pietermaritzburg, n.d.; IIE,2026,p.79) -->
+            <h3>Need Urgent Assistance?</h3>
+            <p>If you are experiencing a plumbing emergency, please contact us directly rather than waiting for an online enquiry response. We provide 24/7
+            emergency plumbing assistance for urgent plumbing problems.</p>
+        </section>
+    </div>
+
+    <!-- Enquiry Form
+    Reference (MDN Web Docs, 2026) -->
+    <section class="FormSection">
+        <h2>Enquiry Form</h2>
+
+        <!-- <form> groups all the information the customer will submit-->
+        <!--Reference (IIE,2026,p.85,175 ; DN Web Docs, n.d )-->
+        <form id="EnquiryForm">
+            <!-- This label belongs to the input whose id is name. -->
+            <!-- type="text" = normal text box -->
+            <!-- id="name" = gives this input a unique identity on the page -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"
+                placeholder="Enter your full name"
+                autocomplete="name"
+                minlength="2"
+                maxlength="20"
+                required>
+            <br><br>
+
+             <!-- type="email" is specifically for email addresses -->
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email"
+                placeholder="Enter your email address"
+                autocomplete="email"
+                required>
+            <br><br>
+
+            <label for="phone">Phone Number:</label>
+           <input type="tel" id="phone" name="phone"
+                placeholder="e.g. 0821234567"
+                autocomplete="tel"
+                pattern="(\+27|0)[0-9]{9}"
+                title="Enter a valid South African phone number starting with 0 or +27, without spaces."
+                required>
+            <br><br>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address"
+                placeholder="Enter property address"
+                autocomplete="street-address"
+                minlength="5"
+                maxlength="150"
+                required>
+            <br><br>
+
+            <label for="service">Service Required:</label>
+            <!-- Reference (MDN Web Docs, 2026) -->
+            <!-- Prompts the customer to select a service -->
+            <!-- disabled prevents the customer from submitting the form with the instruction still selected. -->
+            <select id="service" name="service" required>
+                <option value="" selected disabled>Select a plumbing service</option>
+                <option value="bathroom">Bathroom plumbing</option>
+                <option value="kitchen">Kitchen plumbing</option>
+                <option value="leaking-toilet-tap">Leaking toilet and tap repairs</option>
+                <option value="blocked-drain">Blocked drain and toilet clearing</option>
+                <option value="burst-pipe">Burst and leaking pipe repairs</option>
+                <option value="hot-water">Hot-water repairs, geyser repairs and installations</option>
+            </select>
+            <br><br>
+
+            <label for="problem">Describe Your Plumbing Problem:</label>
+            <br>
+            <!-- Reference (MDN Web Docs, 2026) 
+            <textarea> gives the customer a larger typing box 
+            rows="10" makes it roughly ten lines high-->
+            <textarea id="problem" name="problem"
+                rows="10" cols="80"
+                minlength="10"
+                maxlength="500"
+                placeholder="Provide a short description of the plumbing problem or service you require"
+                required></textarea>
+            <br><br>
+
+            <!-- Reference (MDN Web Docs, 2026) -->
+            <button type="submit">Submit Enquiry</button>
+            <!-- Displays a response after the customer submits the form -->
+            <p id="EnquiryResponse" role="status" aria-live="polite"></p>
+        </form>
+    </section>
+
+</main>
+
+    <!-- Footer -->
+    <!-- Reference (Pro Plumber Pietermaritzburg, n.d. ; IIE,2026,p.112 ; MDN Web Docs, 2026)-->
+    <footer>
+        <h2>Contact Information</h2>
+
+        <div class="FooterContent">
+            <div> 
+                <h3>Pietermaritzburg Contact</h3>
+                <p>Cordwalles Rd, Town Hill, Pietermaritzburg, 3201</p>
+                <p>Phone: +27 60 069 1345</p>
+            </div>
+
+            <div>
+                <h3>Hilton Contact</h3>
+                <p>3 Quarry St, Leonard, Hilton, 3245</p>
+                <p>Phone: +27 74 717 8820</p>  
+            </div>
+        </div>          
+            
+                <div class="OnlineLinks">
+                <h3>Online Links</h3>
+                <!-- Reference (IIE,2026,p.75,79)-->
+                <ul>
+                    <li><a href="https://maps.app.goo.gl/77DfrbPMCzBXfx5Z9">Google Business</a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=61553934892440">Facebook</a></li>
+                    <li><a href="https://twitter.com/ProPlumberPMB">Twitter/X</a></li>
+                    <li><a href="https://www.youtube.com/@ProPlumberPietermaritzburg">YouTube</a></li>
+                    <li><a href="https://www.pinterest.com/proplumberpmb/">Pinterest</a></li>    
+                </ul>    
+            </div>
+    </footer>
+
+</body>
+
+</html>
+
+    

@@ -1,0 +1,229 @@
+<!--Reference list
+MDN Web Docs, 2026. Using responsive images in HTML.[Online] Available at: https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Responsive_images [Accessed 22 September 2026].
+MDN Web Docs, 2026. <div>: The Content Division element.[Online] Available at: https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/div [Accessed 15 September 2026].
+MDN Web Docs,(n.d.). Element: classList property. [Online] Available at: https://developer.mozilla.org/en-US/docs/Web/API/Element/classList [Accessed 4 November 2026].
+OpenAI. 2026. Chat-GPT (Version-5.5). [Large language model]. Available at: https://chatgpt.com/share/6a8cb7fa-3ab0-83ea-a6d1-a7a8ad7bb01d [Accessed: 24 August 2026].
+Pro Plumber Pietermaritzburg, n.d. Pro Plumber Pietermaritzburg. [Online] Available at: https://www.proplumberpietermaritzburg.co.za/  [Accessed 24 August 2026].
+The Independent Institute of Education, 2026. Web Development (Introduction) [WEDE5020/p/w Module Manual]. [online via ARC VLE] The Independent Institute of Education. Available at: WEDE5020MM.docx [Accessed: 27 August 2026]. -->
+
+<!-- Reference (IIE,2026,p.70)-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- External CSS stylesheet -->
+    <!--Reference (IIE,2026,p.106)-->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+
+    <title>Pro Plumber Pietermaritzburg |  Reliable Plumbing & Emergency Repairs</title>
+
+    <!--Reference (IIE,2026,p.185)-->
+    <!-- SEO meta description -->
+    <meta name="description" content="Looking for a reliable plumber in Pietermaritzburg? Pro Plumber provides plumbing repairs, installations and 
+    emergency plumbing services.">
+
+    <!-- SEO meta keywords -->
+    <meta name="keywords" content="Pro Plumber Pietermaritzburg, reliable plumber, local plumbing company, emergency plumber, plumbing repairs, geyser repairs">
+</head>
+
+<body>
+    <!-- Header and navigation -->
+<header class="SiteHeader">
+    <h1 class="BrandName">Pro Plumber Pietermaritzburg</h1>
+
+     <!-- Hamburger menu checkbox 
+       Reference (MDN Web Docs, n.d.) -->
+    <input type="checkbox" id="MenuToggle">
+
+    <!-- Hamburger menu icon -->
+    <label for="MenuToggle" class="MenuButton">☰</label>
+
+    <!--Reference (IIE,2026,p.79)-->
+    <nav class="MainNav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="enquiry.html">Enquiry</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+</header>
+
+    <!-- The main home page content -->
+    <main>
+
+        <!-- Home Hero Section 
+        Reference (MDN Web Docs, 2026) -->
+        <section class="HeroSection">
+
+            <!-- Home page hero image -->
+            <!-- References Image generated using ChatGPT (OpenAI, 2026 ; IIE,2026,p.78 ; MDN Web Docs, 2026) -->
+            <img class="HeroImage"
+                src="images/home-page-plumbing-office.png"
+
+                srcset="images/home-page-plumbing-office-small.png 480w,
+                images/home-page-plumbing-office-medium.png 800w,
+                images/home-page-plumbing-office.png 1536w"
+
+                sizes="(max-width: 768px) 100vw,
+                (max-width: 1024px) 50vw,
+                50vw"
+
+                alt="Pro Plumber Pietermaritzburg representative assisting a customer by phone at the office">
+
+            <!-- Hero text -->
+            <div class="HeroText">
+                <h2>Reliable Plumbing Solutions in Pietermaritzburg</h2>
+
+                <p> Professional plumbing services for homes and businesses including 24/7 emergency assistance.</p>
+
+                <a href="services.html">Our Services</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="enquiry.html">Make an Enquiry</a>
+            </div>
+
+        </section>
+
+        <!-- Introduction section 
+        Reference (MDN Web Docs, 2026) -->
+        <section class="HomeSection">
+            <h2>Introduction</h2>
+
+            <p> 
+                At Pro Plumber Pietermaritzburg, we provide reliable and professional plumbing services to homes and businesses throughout Pietermaritzburg and surrounding
+                areas. Whether you need a small repair, regular maintenance or a larger plumbing installation our experienced team is ready to assist.
+                Our experienced team is committed to reliable workmanship, affordable pricing and customer satisfaction. We also offer 
+                24/7 emergency plumbing assistance to help customers when urgent plumbing problems occur.
+                <!-- Reference (Pro Plumber Pietermaritzburg, n.d.) -->
+            </p>
+            
+        </section>
+
+        <!-- Reference (MDN Web Docs, 2026) -->
+        <div class="HomeInfo">
+
+            <!-- Why Choose Us section -->
+            <section class="HomeSection HomeCard">
+                <h2>Why Choose Us</h2>
+
+                <!-- Reference (IIE,2026,p.72,75)-->
+                <ul>
+                    <li><strong>Expertise:</strong> Skilled and knowledgeable plumbers.</li>
+                    <li><strong>Reliability:</strong> Reliable service and timely completion of work.</li>
+                    <li><strong>Quality Workmanship:</strong> Attention to detail and quality materials.</li>
+                    <li><strong>Affordable Pricing:</strong> Competitive and transparent pricing.</li>
+                    <li><strong>Customer Satisfaction:</strong> Professional service focused on customer needs.</li>
+                    <!-- Reference (Pro Plumber Pietermaritzburg, n.d.) -->
+                </ul>
+            </section>
+
+            <!-- Our Services section location and list
+            Reference (MDN Web Docs, 2026) -->
+            <section class="HomeSection HomeCard">
+                <h2>Our Services</h2>
+
+                <!-- Reference (IIE,2026,p.75)-->
+                <ul>
+                    <li>Bathroom plumbing</li>
+                    <li>Kitchen plumbing</li>
+                    <li>Leaking toilet and tap repairs</li>
+                    <li>Blocked drain and toilet clearing</li>
+                    <li>Burst and leaking pipe repairs</li>
+                    <li>Hot-water repairs, geyser repairs and installations</li>
+                    <li>24/7 emergency plumbing services</li>
+                    <!-- Reference (Pro Plumber Pietermaritzburg, n.d.) -->
+                </ul>
+            </section>
+        </div>
+
+        <!-- Frequently Asked Questions section using accordion-->
+        <!-- Reference (Pro Plumber Pietermaritzburg, n.d. ; MDN Web Docs, 2026 -->
+        <section class="HomeSection FAQSection">
+            <h2>Frequently Asked Questions</h2>
+
+            <div class="FAQContainer">
+                <div class="FAQItem">
+                    <button class="FAQQuestion" aria-expanded="false">
+                        Are free quotations available?
+                        <span class="FAQIcon">+</span>
+                    </button>
+
+                    <div class="FAQAnswer">
+                        <p>Yes. Customers can contact the business with information about their plumbing problem to request a free quotation.</p>
+                    </div>
+                </div>
+
+                <div class="FAQItem">
+                    <button class="FAQQuestion" aria-expanded="false">
+                        What should I do in case of a plumbing emergency?
+                        <span class="FAQIcon">+</span>
+                    </button>
+
+                    <div class="FAQAnswer">
+                        <p>If you experience a plumbing emergency, turn off the water supply to the affected area or to the whole property if necessary and contact Pro Plumber Pietermaritzburg as soon as possible. The business offers 24/7 emergency plumbing assistance to help reduce damage and repair the problem.</p>
+                    </div>
+                </div>
+
+                <div class="FAQItem">
+                    <button class="FAQQuestion" aria-expanded="false">
+                        How often should I have my plumbing system inspected?
+                        <span class="FAQIcon">+</span>
+                    </button>
+
+                    <div class="FAQAnswer">
+                        <p>It is recommended that plumbing systems are checked regularly, such as once a year. Routine inspections can help identify possible problems early before they become more serious and expensive to repair.</p>
+                    </div>
+                </div>
+
+                <div class="FAQItem">
+                    <button class="FAQQuestion" aria-expanded="false">
+                        What are some signs that I might have a plumbing issue?
+                        <span class="FAQIcon">+</span>
+                    </button>
+
+                    <div class="FAQAnswer">
+                        <p>Possible signs of a plumbing problem can include low water pressure, slow drainage, unusual sounds from pipes, water marks on walls or ceilings and an unexpected increase in water bills.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <!-- Reference (Pro Plumber Pietermaritzburg, n.d. ; IIE,2026,p.112 ; MDN Web Docs, 2026 -->
+    <footer>
+        <h2>Contact Information</h2>
+
+        <div class="FooterContent">
+            <div> 
+                <h3>Pietermaritzburg Contact</h3>
+                <p>Cordwalles Rd, Town Hill, Pietermaritzburg, 3201</p>
+                <p>Phone: +27 60 069 1345</p>
+            </div>
+
+            <div>
+                <h3>Hilton Contact</h3>
+                <p>3 Quarry St, Leonard, Hilton, 3245</p>
+                <p>Phone: +27 74 717 8820</p>  
+            </div>
+        </div>          
+            
+                <div class="OnlineLinks">
+                <h3>Online Links</h3>
+                <!-- Reference (IIE,2026,p.75,79)-->
+                <ul>
+                    <li><a href="https://maps.app.goo.gl/77DfrbPMCzBXfx5Z9">Google Business</a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=61553934892440">Facebook</a></li>
+                    <li><a href="https://twitter.com/ProPlumberPMB">Twitter/X</a></li>
+                    <li><a href="https://www.youtube.com/@ProPlumberPietermaritzburg">YouTube</a></li>
+                    <li><a href="https://www.pinterest.com/proplumberpmb/">Pinterest</a></li>    
+                </ul>    
+            </div>
+    </footer>
+
+</body>
+
+</html>

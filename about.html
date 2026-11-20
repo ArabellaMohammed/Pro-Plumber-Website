@@ -1,0 +1,175 @@
+<!--Reference list
+MDN Web Docs, 2026. Using responsive images in HTML. [Online] Available at: https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Responsive_images [Accessed 22 September 2026].
+MDN Web Docs, 2026. <div>: The Content Division element. [Online] Available at: https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/div [Accessed 15 September 2026].
+OpenAI. 2026. Chat-GPT (Version-5.5). [Large language model]. Available at: https://chatgpt.com/share/6a8cb7fa-3ab0-83ea-a6d1-a7a8ad7bb01d [Accessed: 24 August 2026].
+Pro Plumber Pietermaritzburg, n.d. Pro Plumber Pietermaritzburg. [Online] Available at: https://www.proplumberpietermaritzburg.co.za/  [Accessed 24 August 2026].
+The Independent Institute of Education, 2026. Web Development (Introduction) [WEDE5020/p/w Module Manual]. [online via ARC VLE] The Independent Institute of Education. Available at: WEDE5020MM.docx [Accessed: 27 August 2026]. -->
+
+<!-- Reference (IIE,2026,p.70)-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- External CSS stylesheet -->
+    <!--Reference (IIE,2026,p.106)-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Pro Plumber Pietermaritzburg |  Experienced Plumbers in Pietermaritzburg</title>
+
+    <!--Reference (IIE,2026,p.185)-->
+    <!-- SEO Meta Description -->
+    <meta name="description" content="Learn more about Pro Plumber Pietermaritzburg, our plumbing services and our commitment to providing reliable plumbing repairs,
+    installations and customer service.">
+
+    <!-- SEO Meta Keywords -->
+    <meta name="keywords" content="about Pro Plumber, Pietermaritzburg plumbing company, professional plumbers, experienced plumbers, reliable plumbing services,
+    local plumbing business, plumbing repairs, plumbing installations">
+</head>
+
+<body>
+  <!-- Header and navigation -->
+    <header class="SiteHeader">
+        <h1 class="BrandName">Pro Plumber Pietermaritzburg</h1>
+
+        <!-- Hamburger menu checkbox 
+        Reference (MDN Web Docs, n.d.) -->
+        <input type="checkbox" id="MenuToggle">
+
+        <!-- Hamburger menu icon -->
+        <label for="MenuToggle" class="MenuButton">☰</label>
+
+        <!--Reference (IIE,2026,p.79)-->
+        <nav class="MainNav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="enquiry.html">Enquiry</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+<!-- Main About Us content -->
+<main>
+
+    <!-- About Us hero section 
+    Reference (MDN Web Docs, 2026) -->
+    <div class="AboutHero">
+
+        <!-- About Us hero image -->
+        <!-- References Image generated using ChatGPT (OpenAI, 2026 ; IIE,2026,p.78 ; MDN Web Docs, 2026) -->
+        <img class="AboutImage"
+            src="images/about-page-plumbing-team.png"
+
+            srcset="images/about-page-plumbing-team-small.png 480w,
+                    images/about-page-plumbing-team-medium.png 800w,
+                    images/about-page-plumbing-team.png 1536w"
+
+            sizes="(max-width: 768px) 100vw,
+                (max-width: 1024px) 45vw,
+                45vw"
+                
+            alt="Pro Plumber Pietermaritzburg plumbing team standing beside their branded work vehicle">
+
+        <!-- About Us background section -->
+        <!-- Reference (Pro Plumber Pietermaritzburg, n.d.) -->
+        <section class="AboutText">
+            <h2>About Us</h2>
+
+            <h3>Our Background</h3>
+
+        <p>
+            At Pro Plumber Pietermaritzburg we are a team of plumbing professionals committed to providing reliable and professional services to our customers.
+            We have been serving the Pietermaritzburg community for many years with dedication and integrity. We believe in transparent communication, fair
+            pricing, professional workmanship and treating our customers with honesty and integrity.
+        </p>
+
+        <p>
+            Our team consists of skilled and experienced plumbers who are fully licensed and insured. We continue to develop our skills and stay informed about current
+            plumbing techniques and technologies so that we can provide effective and reliable solutions to our customers.            
+        </p>
+        </section>
+    </div>
+
+    <!--Reference (MDN Web Docs, 2026)-->
+    <div class="AboutValues">
+
+    <!-- Mission section -->
+    <!-- Reference (Pro Plumber Pietermaritzburg, n.d.) -->
+        <section>
+            <h2>Our Mission</h2>
+
+            <p>Our mission is to provide high-quality plumbing services that meet and exceed our customers' expectations.</p>
+        </section>
+
+        <!-- Vision section -->
+        <section>
+            <h2>Our Vision</h2>
+
+            <p>Our vision is to continue being a trusted plumbing service in Pietermaritzburg and surrounding areas by providing reliable, professional and customer-focused plumbing solutions.</p>
+        </section>
+
+        <!-- Commitment section -->
+        <!-- Reference (Pro Plumber Pietermaritzburg, n.d.) -->
+        <section>
+            <h2>Our Commitment</h2>
+
+            <p>We are committed to providing reliable plumbing services with quality workmanship, fair pricing and clear communication. Our aim is to make sure every customer
+                receives professional service and a solution that meets their plumbing needs.</p>
+        </section>
+    </div>    
+
+    <!-- Professional Team section -->
+    <!-- Reference (Pro Plumber Pietermaritzburg, n.d.; IIE,2026,p.75) -->
+    <section class="TeamSection">
+        <h2>Our Professional Team</h2>
+
+        <p>Our plumbers are:</p>
+
+        <ul>
+            <li>Skilled and experienced</li>
+            <li>Fully licensed and insured</li>
+            <li>Committed to quality workmanship</li>
+            <li>Continuously developing their plumbing knowledge and skills</li>
+            <li>Focused on providing reliable and professional service</li>
+            <li>Committed to clear communication and fair pricing</li>
+        </ul>
+    </section>
+</main>
+
+    <!-- Footer -->
+    <!-- Reference (Pro Plumber Pietermaritzburg, n.d. ; IIE,2026,p.112 ; MDN Web Docs, 2026)-->
+    <footer>
+        <h2>Contact Information</h2>
+
+        <div class="FooterContent">
+            <div> 
+                <h3>Pietermaritzburg Contact</h3>
+                <p>Cordwalles Rd, Town Hill, Pietermaritzburg, 3201</p>
+                <p>Phone: +27 60 069 1345</p>
+            </div>
+
+            <div>
+                <h3>Hilton Contact</h3>
+                <p>3 Quarry St, Leonard, Hilton, 3245</p>
+                <p>Phone: +27 74 717 8820</p>  
+            </div>
+        </div>          
+            
+                <div class="OnlineLinks">
+                <h3>Online Links</h3>
+                <!-- Reference (IIE,2026,p.75,79)-->
+                <ul>
+                    <li><a href="https://maps.app.goo.gl/77DfrbPMCzBXfx5Z9">Google Business</a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=61553934892440">Facebook</a></li>
+                    <li><a href="https://twitter.com/ProPlumberPMB">Twitter/X</a></li>
+                    <li><a href="https://www.youtube.com/@ProPlumberPietermaritzburg">YouTube</a></li>
+                    <li><a href="https://www.pinterest.com/proplumberpmb/">Pinterest</a></li>    
+                </ul>    
+            </div>
+    </footer>
+
+</body>
+
+</html>

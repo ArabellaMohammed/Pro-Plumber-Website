@@ -1,0 +1,309 @@
+<!--Reference list
+MDN Web Docs, 2026. <div>: The Content Division element. [Online] Available at: https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/div [Accessed 15 September 2026].
+MDN Web Docs, 2026. class HTML global attribute. [Online] Available at: https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/class [Accessed 15 September 2026].
+MDN Web Docs, 2026. Using responsive images in HTML. [Online] Available at: https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Responsive_images [Accessed 22 September 2026].
+MDN Web Docs,2026. Class HTML global attribute. [Online] Available at: https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/class [Accessed 15 September 2026].
+MDN Web Docs, 2026. Using responsive images in HTML. [Online] Available at: https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Responsive_images [Accessed 22 September 2026].
+MDN Web Docs, (n.d.). The HTML input element. [Online] Available at: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input [Accessed 4 November 2026].
+MDN Web Docs, (n.d.). ARIA: aria-live attribute. [Online] Available at: https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-live [Accessed 6 November 2026].
+OpenAI. 2026. Chat-GPT (Version-5.5). [Large language model]. Available at: https://chatgpt.com/share/6a8cb7fa-3ab0-83ea-a6d1-a7a8ad7bb01d [Accessed: 24 August 2026].
+Pro Plumber Pietermaritzburg, n.d. Pro Plumber Pietermaritzburg. [Online] Available at: https://www.proplumberpietermaritzburg.co.za/  [Accessed 24 August 2026].
+The Independent Institute of Education, 2026. Web Development (Introduction) [WEDE5020/p/w Module Manual]. [online via ARC VLE] The Independent Institute of Education. Available at: WEDE5020MM.docx [Accessed: 27 August 2026]. -->
+
+<!-- Reference (IIE,2026,p.70)-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- External CSS stylesheet -->
+    <!--Reference (IIE,2026,p.106)-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Lightbox stylesheet -->
+    <link rel="stylesheet" href="css/lightbox.min.css">
+
+    <title>Pro Plumber Pietermaritzburg | Plumbing Repairs And Installations</title>
+
+    <!--Reference (IIE,2026,p.185)-->
+    <!-- SEO Meta Description -->
+    <meta name="description" content="Explore Pro Plumber Pietermaritzburg's plumbing services, including bathroom and kitchen plumbing, geyser repairs,
+    blocked drains, leaking pipes and 24/7 emergency repairs.">
+
+    <!-- SEO Meta Keywords -->
+    <meta name="keywords" content="plumbing services Pietermaritzburg, bathroom plumbing, kitchen plumbing, geyser repairs, geyser installations, 
+    blocked drain clearing, leaking toilet repairs, leaking tap repairs, burst pipe repairs, emergency plumbing">
+
+    <!-- Lightbox JavaScript -->
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- Header and navigation -->
+    <header class="SiteHeader">
+        <h1 class="BrandName">Pro Plumber Pietermaritzburg</h1>
+
+         <!-- Hamburger menu checkbox 
+         Reference (MDN Web Docs, n.d.) -->
+        <input type="checkbox" id="MenuToggle">
+
+        <!-- Hamburger menu icon -->
+        <label for="MenuToggle" class="MenuButton">☰</label>
+
+        <!--Reference (IIE,2026,p.79)-->
+        <nav class="MainNav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="enquiry.html">Enquiry</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+<!-- Main Services content -->
+<main>
+
+    <!-- Services page hero section 
+    Reference (MDN Web Docs, 2026)-->
+    <div class="ServicesHero">
+        <!-- Services page image -->
+        <!-- References Image generated using ChatGPT (OpenAI, 2026 ; IIE,2026,p.78 ; MDN Web Docs, 2026)-->
+        <!-- Responsive Services hero image -->
+        <img class="ServicesImage"
+            src="images/services-page-plumbing-consultation.png"
+
+            srcset="images/services-page-plumbing-consultation-small.png 480w,
+            images/services-page-plumbing-consultation-medium.png 800w,
+            images/services-page-plumbing-consultation.png 1448w"
+
+            sizes="(max-width: 768px) 100vw,
+            (max-width: 1024px) 48vw,
+            48vw"
+            
+            alt="Pro Plumber representative discussing plumbing services with a customer at their home">
+
+        <!-- Services introduction -->
+        <!-- Reference (Pro Plumber Pietermaritzburg, n.d. ; MDN Web Docs, 2026) -->
+        <section class="ServicesIntro">
+            <h2>Our Services</h2>
+
+            <p>At Pro Plumber Pietermaritzburg, we provide reliable plumbing services to homes and businesses throughout Pietermaritzburg and
+            surrounding areas. Our experienced plumbers can assist with repairs, maintenance, installations and emergency plumbing problems.</p>
+        </section>
+    </div>
+
+    <!-- Search services section -->
+    <!-- Reference (MDN Web Docs, n.d.) -->
+    <section class="ServicesSearch">
+        <h2>Find a Plumbing Service</h2>
+
+        <label for="ServiceSearch">Search for a service:</label>
+
+        <input type="search"
+            id="ServiceSearch"
+            placeholder="e.g. Geyser repairs, blocked drains..."
+            aria-label="Search plumbing services">
+
+        <p id="SearchMessage" aria-live="polite"></p>
+    </section>
+   
+    <!-- Container for all service cards 
+    Reference (MDN Web Docs, 2026)-->
+    <div class="ServicesGrid">
+
+        <!-- 24/7 Emergency Plumbing Services information -->
+        <!-- Reference (Pro Plumber Pietermaritzburg, n.d.; IIE,2026,p.79) -->
+        <section class="ServiceCard EmergencyCard">
+            <!-- Reference (Lokesh Dhakar, n.d. IIE,2026,p.173) -->
+            <a href="images/contact-page-emergency-plumber.png"
+                data-lightbox="ServicesGallery"
+                data-title="Emergency Plumbing">
+
+                <!-- Reference (OpenAI, 2026) -->
+                <img src="images/contact-page-emergency-plumber.png"
+                    alt="Pro Plumber emergency plumber carrying plumbing tools beside a branded service vehicle"
+                    class="EmergencyImage">
+            </a>
+
+            <div class="EmergencyText">
+            <h2>24/7 Emergency Plumbing Services</h2>
+
+            <p>Plumbing emergencies can happen at any time. We provide 24/7 emergency plumbing services for customers who require urgent assistance. Our team
+            can assist with serious plumbing problems such as burst pipes, major leaks, blocked plumbing and other emergencies that require immediate attention.</p>
+
+            <a href="contact.html">Contact Us</a>
+            </div>
+        </section>
+
+        <!-- Bathroom Plumbing information -->
+        <!-- Reference (Pro Plumber Pietermaritzburg, n.d.; IIE,2026,p.79) -->
+        <section class="ServiceCard">
+            <!-- Reference (Dhakar, n.d. IIE,2026,p.173) -->
+            <a href="images/bathroom-plumbing-repair.png"
+                data-lightbox="ServicesGallery"
+                data-title="Bathroom Plumbing Repair">
+
+                <!-- Reference (OpenAI, 2026) -->
+                <img src="images/bathroom-plumbing-repair.png"
+                    alt="Bathroom plumbing repair"
+                    class="ServiceImage">
+            </a>
+          
+            <h2>Bathroom Plumbing</h2>
+
+            <p>We provide bathroom plumbing services including repairs, maintenance and installations. Our plumbers can assist with toilets, taps, pipes
+            and other bathroom plumbing problems to help keep your bathroom plumbing working correctly.</p>
+
+            <a href="enquiry.html">Enquire Now</a>
+        </section>
+
+        <!-- Kitchen Plumbing information -->
+        <!-- Reference (Pro Plumber Pietermaritzburg, n.d.; IIE,2026,p.79) -->
+        <section class="ServiceCard">
+            <!-- Reference (Dhakar, n.d. IIE,2026,p.173) -->
+            <a href="images/kitchen-plumbing-repair.png"
+                data-lightbox="ServicesGallery"
+                data-title="Kitchen Plumbing">
+
+                <!-- Reference (OpenAI, 2026) -->
+                <img class="ServiceImage"
+                    src="images/kitchen-plumbing-repair.png"
+                    alt="Plumber repairing kitchen sink pipes beneath a kitchen cabinet">
+            </a>
+
+            <h2>Kitchen Plumbing</h2>
+
+            <p>We provide kitchen plumbing services for repairs, maintenance and installations. Our team can assist with taps, pipes, water connections
+            and other kitchen plumbing problems.</p>
+
+            <a href="enquiry.html">Enquire Now</a>
+        </section>
+
+        <!-- Leaking Toilet and Tap Repairs information -->
+        <!-- Reference (Pro Plumber Pietermaritzburg, n.d.; IIE,2026,p.79) -->
+        <section class="ServiceCard">
+            <!-- Reference (Dhakar, n.d. IIE,2026,p.173) -->
+            <a href="images/leaking-toilet-and-tap-repair.png"
+                data-lightbox="ServicesGallery"
+                data-title="Leaking Toilet and Tap Repairs">
+
+                <!-- Reference (OpenAI, 2026) -->
+                <img class="ServiceImage"
+                    src="images/leaking-toilet-and-tap-repair.png"
+                    alt="Plumber repairing a leaking toilet and tap">
+            </a>
+            
+            <h2>Leaking Toilet and Tap Repairs</h2>
+
+            <p>Leaking toilets and taps can waste water and may lead to further plumbing problems if they are not repaired. Our plumbers can identify
+            the cause of the leak and complete the necessary repairs to restore the affected toilet or tap.</p>
+
+            <a href="enquiry.html">Enquire Now</a>
+        </section>
+
+        <!-- Blocked Drain and Toilet Clearing information-->
+        <!-- Reference (Pro Plumber Pietermaritzburg, n.d.; IIE,2026,p.79) -->
+        <section class="ServiceCard">
+            <!-- Reference (Dhakar, n.d. ; IIE,2026,p.173) -->
+            <a href="images/blocked-drain-toilet-clearing.png"
+                data-lightbox="ServicesGallery"
+                data-title="Blocked Drain and Toilet Clearing">
+
+                <!-- Reference (OpenAI, 2026) -->
+                <img class="ServiceImage"
+                    src="images/blocked-drain-toilet-clearing.png"
+                    alt="Plumber using drain clearing equipment to unblock a toilet">
+            </a>
+
+            <h2>Blocked Drain and Toilet Clearing</h2>
+
+            <p>We assist with blocked drains and toilets that are draining slowly or have become completely blocked. Our plumbers can identify the cause
+            of the blockage and clear it so that the plumbing system can work properly again.</p>
+
+            <a href="enquiry.html">Enquire Now</a>
+        </section>
+
+        <!-- Burst and Leaking Pipe Repairs section -->
+        <!-- Reference (Pro Plumber Pietermaritzburg, n.d.; IIE,2026,p.79) -->
+        <section class="ServiceCard">
+            <!-- Reference (Dhakar, n.d.IIE,2026,p.173) -->
+            <a href="images/burst-and-leaking-pipe-repair.png"
+                data-lightbox="ServicesGallery"
+                data-title="Burst and Leaking Pipe Repairs">
+
+                <!-- Reference (OpenAI, 2026) -->
+                <img class="ServiceImage"
+                src="images/burst-and-leaking-pipe-repair.png"
+                alt="Plumber repairing a damaged and leaking water pipe">
+            </a>
+
+            <h2>Burst and Leaking Pipe Repairs</h2>
+
+            <p>Burst and leaking pipes can cause water loss and damage to homes and businesses. Our plumbers can locate damaged or leaking pipes and carry
+            out the necessary repairs. Customers experiencing a serious burst pipe can also contact us for emergency plumbing assistance.</p>
+
+            <a href="enquiry.html">Enquire Now</a>
+        </section>
+
+        <!-- Hot-Water Repairs, Geyser Repairs and Installations information -->
+        <!-- Reference (Pro Plumber Pietermaritzburg, n.d.; IIE,2026,p.79) -->
+        <section class="ServiceCard">
+             <!-- Reference (Dhakar, n.d. IIE,2026,p.173) -->
+            <a href="images/geyser-repair-installation.png"
+                data-lightbox="ServicesGallery"
+                data-title="Geyser Repair and Installation">
+
+                <!-- Reference (OpenAI, 2026) -->
+                <img class="ServiceImage"
+                    src="images/geyser-repair-installation.png"
+                    alt="Plumber inspecting and repairing a hot-water geyser">
+            </a>
+
+            <h2>Hot-Water Repairs, Geyser Repairs and Installations</h2>
+
+            <p>We provide assistance with hot-water problems as well as geyser repairs and installations. Our plumbers can assess the problem and provide the
+            appropriate repair or installation to help restore a reliable hot-water supply.</p>
+
+            <a href="enquiry.html">Enquire Now</a>
+        </section>
+    </div>
+
+</main>
+
+    <!-- Footer -->
+    <!-- Reference (Pro Plumber Pietermaritzburg, n.d. ; IIE,2026,p.112 ; MDN Web Docs, 2026)-->
+    <footer>
+        <h2>Contact Information</h2>
+
+        <div class="FooterContent">
+            <div> 
+                <h3>Pietermaritzburg Contact</h3>
+                <p>Cordwalles Rd, Town Hill, Pietermaritzburg, 3201</p>
+                <p>Phone: +27 60 069 1345</p>
+            </div>
+
+            <div>
+                <h3>Hilton Contact</h3>
+                <p>3 Quarry St, Leonard, Hilton, 3245</p>
+                <p>Phone: +27 74 717 8820</p>  
+            </div>
+        </div>          
+            
+                <div class="OnlineLinks">
+                <h3>Online Links</h3>
+                <!-- Reference (IIE,2026,p.75,79)-->
+                <ul>
+                    <li><a href="https://maps.app.goo.gl/77DfrbPMCzBXfx5Z9">Google Business</a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=61553934892440">Facebook</a></li>
+                    <li><a href="https://twitter.com/ProPlumberPMB">Twitter/X</a></li>
+                    <li><a href="https://www.youtube.com/@ProPlumberPietermaritzburg">YouTube</a></li>
+                    <li><a href="https://www.pinterest.com/proplumberpmb/">Pinterest</a></li>    
+                </ul>    
+            </div>
+    </footer>
+
+    <!-- Connects the JavaScript file for interactive features -->
+    <script src="js/script.js"></script>
+    </body>
+</html>
